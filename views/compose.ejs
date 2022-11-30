@@ -1,0 +1,15 @@
+<%- include('partials/header') -%>
+<h1 ">Compose</h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+<label for="title">Title</label>    
+<input class="form-control" type="text" name="dataName" autocomplete="off">
+<!-- <small id="dis1" class="form-text text-muted">This will be the heading of your blog</small> -->
+
+<label for="content" >Content</label>
+<textarea  class="form-control" name="dataContent" id="" cols="30" rows="5"></textarea>
+<!-- <small id="dis2" class="form-text text-muted">Write the content above</small> -->
+</div>
+<button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+<%- include('partials/footer') -%>
